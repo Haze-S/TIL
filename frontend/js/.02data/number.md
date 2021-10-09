@@ -1,4 +1,4 @@
-# 숫자(number)
+# 숫자(Number)
 Number 객체는 숫자 값으로 작업할 수 있게 해주는 래퍼(wrapper) 객체<br/>
 <br/>
 [mdn](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Number)
