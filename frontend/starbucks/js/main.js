@@ -1,28 +1,28 @@
+// 검색창 이벤트
 const searchEl = document.querySelector('.search');
 const searchInputEl = searchEl.querySelector('input');
 
 searchEl.addEventListener('click', function () {
   searchInputEl.focus();
 });
-
 searchInputEl.addEventListener('focus', function () {
   searchEl.classList.add('focused');
   searchInputEl.setAttribute('placeholder', '통합검색');
 });
-
 searchInputEl.addEventListener('blur', function () {
   searchEl.classList.remove('focused');
   searchInputEl.setAttribute('placeholder', '');
 });
 
 
+// 페이지가 스크롤되면 뱃지 숨김 이벤트
 const badgeEl = document.querySelector('header .badges');
 
 window.addEventListener('scroll', _.throttle(function () {
   console.log(window.scrollY);
   if(window.scrollY > 500) {
     // 배지 숨기기
-    // gsap.to(요소, 지속시간, 옵션);
+    // gsap.to(요소, 지속시간, {옵션});
     gsap.to(badgeEl, .4, {
       opacity: 0,
       display: 'none'
@@ -38,6 +38,7 @@ window.addEventListener('scroll', _.throttle(function () {
 // _.throttle(함수, 시간)
 
 
+// 비주얼 아이템 시간차로 보여지는 이벤트
 const fadeEls = document.querySelectorAll('.visual .fade-in');
 
 fadeEls.forEach(function (fedeEl, index) {
@@ -48,6 +49,7 @@ fadeEls.forEach(function (fedeEl, index) {
 });
 
 
+// 배너 슬라이드 with Swiper 라이브러리
 // new 생성자(선택자, 옵션)
 new Swiper('.notice-line .swiper', {
   direction: 'vertical',
@@ -73,6 +75,7 @@ new Swiper('.promotion .swiper', {
 });
 
 
+// 배너 요소 나타내고 숨기는 이벤트
 const promotionEl = document.querySelector('.promotion');
 const promotionToggleBtn = document.querySelector('.toggle-promotion');
 const promotionToggleBtnIcon = promotionToggleBtn.querySelector('.material-icons');
@@ -89,3 +92,21 @@ promotionToggleBtn.addEventListener('click', function () {
     promotionToggleBtnIcon.innerText ='expand_less';
   }
 });
+
+
+// 이벤트 section에 scroll-spy 클래스가 있는 요소를 감시
+const spyEls = document.querySelectorAll('section.scroll-spy');
+spyEls.forEach(function (spyEl) {
+  new ScrollMagic
+    .Scene({
+      triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
+      triggerHook: .8, // 뷰포트(0~1) 기준으로 요소가 감시될 위치 지정
+    })
+    .setClassToggle(spyEl, 'show') // 해당 요소가 hook에 나타나면 클래스 추가
+    .addTo(new ScrollMagic.Controller());
+});
+
+
+// copyright 연도 지정
+const thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear(); // 2021
