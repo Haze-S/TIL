@@ -25,6 +25,10 @@
   text-align: center;
   border-bottom: 1px solid #ddd;
 }
+.signin .signin__card h2 strong {
+  font-weight: 700;
+  color: #006633;
+}
 .signin .signin__card form {
   padding: 30px 22px;
 }
@@ -42,10 +46,12 @@
   margin-bottom: 20px;
 }
 .signin .signin__card form .check-wrap input {
-  width: 26px;
-  height: 26px;
-  background-image: url(https://image.istarbucks.co.kr/common/img/util/mem/mem_check_off.png);
-  border: none;
+  display: none;
+}
+.signin .signin__card form .check-wrap label {
+  padding: 13px 0 13px 36px;
+  background: url(https://image.istarbucks.co.kr/common/img/util/mem/mem_check_off.png) no-repeat left center / 26px;
+  cursor: pointer;
 }
 .signin .signin__card form [type="submit"] {
   background-color: #006633;
