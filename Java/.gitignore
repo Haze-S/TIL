@@ -1,8 +1,0 @@
-.gradle/
-.idea/
-.metadata/
-gradle/
-src
-build.gradle
-gradlew.bat
-settings.gradle
