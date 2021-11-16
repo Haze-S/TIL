@@ -13,6 +13,6 @@ public class CustomerTest {
 		customerKim.setCustomerName("Kim");
 		customerKim.setCustomerID(10020);
 		customerKim.bonusPoint = 10000;
-		System.out.println(customerKim.showCustomerInfo());
+		System.out.println(customerKim.showCustomerInfo()); //Kim님의 등급은VIP이며, 보너스 포인트는10000입니다.
 	}
 }
