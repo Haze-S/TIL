@@ -8,4 +8,7 @@
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Constructor"/>
+    <fullyQualifiedTypeName name="ch02.MyArray"/>
+    <fullyQualifiedTypeName name="ch03.MyLinkedList"/>
+    <fullyQualifiedTypeName name="ch03.MyListNode"/>
 </qualifiedTypeNameHistroy>
