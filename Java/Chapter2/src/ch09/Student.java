@@ -5,14 +5,14 @@ public class Student {
 	int sudentId;
 	String studentName;
 	
-	Subject korea;  //  멤버변수 참조자료형
+	Subject korea;  // 멤버변수 참조자료형
 	Subject math;
 	
 	Student(int studentId, String StudentName){
 		this.sudentId = studentId;
 		this.studentName = StudentName;
 		
-		korea = new Subject();  //  생성자
+		korea = new Subject();  // 각 객체의 역할과 기능을 분명히 하기 위해 참조자료형은 생성해서 사용하는 것이 좋다.
 		math = new Subject();
 	}
 	

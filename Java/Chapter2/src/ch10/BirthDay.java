@@ -6,14 +6,14 @@ public class BirthDay {
 	private int month;
 	private int year;
 	
-	private boolean isValid;
+	private boolean isValid; // booleanÀÇ ÃÊ±ê°ªÀº false
 	
 	public int getDay() {
 		return day;
 	}
 	
 	public void setDay(int day) {
-			this.day = day;
+		this.day = day;
 	}
 
 	public int getMonth() {

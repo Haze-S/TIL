@@ -1,9 +1,12 @@
 package ch06;
 
-public class Student { // 멤버변수는 생성이되면 자동으로 초기화가 된다.
+public class Student { 
+	
+	// 지역변수와 달리 멤버변수는 생성이되면 자동으로 초기화가 된다.
+	// String = null, int = 0
 	public int studentNumber;
-	public String studentName; // null
-	public int grade; // 0
+	public String studentName;
+	public int grade;
 	
 	public Student() {} 
 	// constructor 오버로딩, 기본 생성자의 생성으로 인해 에러가 생겨 아래의 생성자를 쓰기 위해 직접 생성자를 만든다.

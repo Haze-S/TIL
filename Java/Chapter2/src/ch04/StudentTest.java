@@ -1,22 +1,25 @@
 package ch04;
 
 public class StudentTest {
+
 	public static void main(String[] args) {
 		
-		Student studentLee = new Student(); // 인스턴스(참조변수)
+		Student studentLee = new Student(); // 생성자
+		// Student = 객체 데이터타입
 		
-		studentLee.studentID = 12345;
-		studentLee.setStudentName("Lee");
-		studentLee.address = "서울 강남구";
+		studentLee.studentId = 12345;
+		studentLee.studentName = "Lee";
+		studentLee.address = "부산 연제구";
 		
 		studentLee.showStudentInfo();
 		
 		Student studentKim = new Student();
 		
-		studentKim.studentID = 54321;
-		studentKim.studentName = "Kim";
-		studentKim.address = "서울 강북구";
+		studentKim.studentId = 54321;
+		studentKim.setStudentName("Kim");
+		studentKim.address = "부산 진구";
 		
 		studentKim.showStudentInfo();
 	}
+
 }
