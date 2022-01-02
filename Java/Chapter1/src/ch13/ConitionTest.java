@@ -2,7 +2,7 @@ package ch13;
 
 import java.util.Scanner;
 
-public class SonitionTest {
+public class ConitionTest {
 	public static void main(String[] args) {
 		
 		int max;

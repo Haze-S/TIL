@@ -7,8 +7,8 @@ public class VariableTest {
 		
 		System.out.println(bnum);
 		
-		// int num = 12345678900;
-		long num = 12345678900L;
+		// int num = 12345678900;  에러
+		long num = 12345678900L; // long 사이즈의 리터럴을 이용할 때엔 숫자 뒤에 L을 붙여서 사용한다. 
 		
 		System.out.println(num);
 	}
