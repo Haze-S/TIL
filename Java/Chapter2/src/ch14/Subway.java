@@ -1,6 +1,7 @@
 package ch14;
 
 public class Subway {
+	
 	int lineNumber;
 	int passengerCount;
 	int money;
@@ -14,8 +15,7 @@ public class Subway {
 		passengerCount++;
 	}
 	
-	public void showBusinfo() {
-		System.out.println(lineNumber + "번의 승객 수는 " + passengerCount + "명 이고, 수입은 " + money + "원입니다.");
+	public void showSubInfo() {
+		System.out.println(lineNumber + "번의 승객은 " + passengerCount + "명이고, 수입은 " + money + "입니다.");
 	}
 }
-
