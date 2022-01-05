@@ -15,9 +15,9 @@ public class UserInfoClient {
 		
 		FileInputStream fis = new FileInputStream("db.properties");
 		
-		Properties prop = new Properties();
+		Properties prop = new Properties(); // 키:밸류를 쌍으로 읽어올 수 있음
 		prop.load(fis);
-		
+		 
 		String dbType = prop.getProperty("DBTYPE");
 		
 		UserInfo userInfo = new UserInfo();
