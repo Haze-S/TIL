@@ -8,7 +8,7 @@ public class MemberTreeSet {
 	private TreeSet<Member> treeSet;
 	
 	public MemberTreeSet() {
-		treeSet = new TreeSet<>();	
+		treeSet = new TreeSet<Member>(new Member());	
 	}
 	
 	public void addMember(Member member) {

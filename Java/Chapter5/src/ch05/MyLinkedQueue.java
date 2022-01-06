@@ -16,12 +16,12 @@ public class MyLinkedQueue extends MyLinkedList implements Queue {
 	@Override
 	public void enQueue(String data) {
 		MyListNode newNode;
-		if(isEmpty()) {
+		if(isEmpty()) {  // 비어있어서 맨 처음에 들어감
 			newNode = addElement(data);
 			front = newNode;
 			rear = newNode;
 		}
-		else {
+		else {  // 맨 뒤로 들어감
 			newNode = addElement(data);
 			rear = newNode;
 		}

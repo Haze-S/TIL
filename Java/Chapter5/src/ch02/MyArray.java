@@ -28,7 +28,7 @@ public class MyArray {
 			System.out.println("not enough memory");
 			return;
 		}
-		intArr[count++] = num;	
+		intArr[count++] = num;
 	}
 	
 	public void insertElement(int position, int num)
@@ -45,7 +45,7 @@ public class MyArray {
 			return;
 		}
 		
-		for(i = count-1; i >= position; i--) {
+		for(i = count-1; i >= position; i++) {
 			intArr[i+1] = intArr[i];    // 하나씩 이동
 		}
 		

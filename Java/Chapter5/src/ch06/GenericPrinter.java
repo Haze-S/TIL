@@ -15,4 +15,4 @@ public class GenericPrinter<T> {
 	public String toString() {
 		return material.toString();
 	}
-}
+} 

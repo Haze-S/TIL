@@ -10,7 +10,8 @@ public class MyLinkedList {
 		count = 0;
 	}
 	
-	public MyListNode addElement(String data) {
+	public MyListNode addElement(String data) 
+	{
 		
 		MyListNode newNode;
 		if(head == null) {  // 맨 처음일 때
@@ -28,7 +29,8 @@ public class MyLinkedList {
 		return newNode;
 	}
 	
-	public MyListNode insertElement(int position, String data) {
+	public MyListNode insertElement(int position, String data) 
+	{
 
 		int i;
 		MyListNode tempNode = head;
@@ -57,7 +59,8 @@ public class MyLinkedList {
 		return newNode;
 	}
 		
-	public MyListNode removeElement(int position) {
+	public MyListNode removeElement(int position) 
+	{
 		int i;
 		MyListNode tempNode = head;
 		
@@ -83,7 +86,8 @@ public class MyLinkedList {
 		return tempNode;
 	}
 	
-	public String getElement(int position) {
+	public String getElement(int position) 
+	{
 		int i;
 		MyListNode tempNode = head;
 		
@@ -104,7 +108,8 @@ public class MyLinkedList {
 		return tempNode.getData();
 	}
 
-	public MyListNode getNode(int position) {
+	public MyListNode getNode(int position) 
+	{
 		int i;
 		MyListNode tempNode = head;
 		
@@ -125,17 +130,19 @@ public class MyLinkedList {
 		return tempNode;
 	}
 
-	public void removeAll() {
+	public void removeAll() 
+	{
 		head = null;
 		count = 0;
-		
 	}
 	
-	public int getSize() {
+	public int getSize() 
+	{
 		return count;
 	}
 	
-	public void printAll() {
+	public void printAll() 
+	{
 		if(count == 0){
 			System.out.println("출력할 내용이 없습니다.");
 			return;
@@ -152,7 +159,8 @@ public class MyLinkedList {
 		System.out.println("");
 	}
 	
-	public boolean isEmpty() {
+	public boolean isEmpty() 
+	{
 		if(head == null) return true;
 		else return false;
 	}
