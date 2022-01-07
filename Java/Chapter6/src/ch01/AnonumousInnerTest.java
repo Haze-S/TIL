@@ -9,7 +9,7 @@ class Outer2{
 		
 		int num = 10;
 		
-		class MyRunnable implements Runnable {
+		return new Runnable(){ // 익명 함수
 			
 			int localNum = 1000;
 
@@ -25,10 +25,18 @@ class Outer2{
 				
 			}
 			
-		}
-		return new MyRunnable();
+		};
 		
 	}
+	
+	Runnable runnable = new Runnable() {
+		
+		@Override
+		public void run() {
+
+			System.out.println("Runnable class");
+		}
+	};
 	
 }
 
@@ -37,6 +45,12 @@ public class AnonumousInnerTest {
 
 	public static void main(String[] args) {
 
+		Outer2 out = new Outer2();
+		Runnable runner = out.getRunnable(100);
+		
+		runner.run();
+		
+		out.runnable.run();
 	}
 
 }

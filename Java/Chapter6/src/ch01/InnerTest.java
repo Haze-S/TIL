@@ -10,7 +10,7 @@ class OutClass {
 		inClass = new InClass();
 	}
 	
-	class InClass {
+	private class InClass {
 		
 		int iNum = 100;
 		
