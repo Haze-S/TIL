@@ -24,7 +24,6 @@
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.function.BinaryOperator"/>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
     <fullyQualifiedTypeName name="ch10.PassWordException"/>
     <fullyQualifiedTypeName name="java.util.logging.Logger"/>
@@ -42,4 +41,14 @@
     <fullyQualifiedTypeName name="ch19.WhippingCream"/>
     <fullyQualifiedTypeName name="ch22.SyncMain"/>
     <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+    <fullyQualifiedTypeName name="grade.GradeEvaluation"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="javax.security.auth.Subject"/>
+    <fullyQualifiedTypeName name="school.report.GeneraterGradeReport"/>
+    <fullyQualifiedTypeName name="school.School"/>
+    <fullyQualifiedTypeName name="school.Subject"/>
+    <fullyQualifiedTypeName name="school.Student"/>
+    <fullyQualifiedTypeName name="school.Score"/>
+    <fullyQualifiedTypeName name="utils.Define"/>
+    <fullyQualifiedTypeName name="grade.PassFailEvaluation"/>
 </qualifiedTypeNameHistroy>
